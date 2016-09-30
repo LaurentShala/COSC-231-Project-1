@@ -1,75 +1,126 @@
-
 body {
-  margin: 0;
-  font-family: "Helvetica", sans-serif;
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
 }
 
 div.header {
-
-  height: 100vh;
-  background-position: center;
-  background-image: url(/pikachuBG.jpg);
-  background-size: cover;
-  margin-bottom: 50px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-image: url(/images/pikachuBG.jpg);
+    background-size: cover;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-h1, h3 {
-  font-size: 250%;
-  color: white;
+#mainTitle {
+    font-size: 100px;
+    color: white;
+    text-shadow: 0px 2px 5px gray;
+}
+
+#mainSlogan {
+    font-size: 250%;
+    color: white;
+    text-shadow: 0px 2px 5px gray;
+    margin-top: -30px;
 }
 
 li {
-  display:inline-block;
-  margin:20px;
-  text-decoration: none;
-  o
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    o
 }
 
 p {
-  max-width: 600px;
-  margin: 0 auto 20px;
-  color: black;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: black;
 }
 
 div.navBar {
-  box-shadow: 5px 0px 5px gray;
-  width: 100%;
-  height: 70px;
-  background-color: #ed8b09;
-  position: fixed;
-  top: 0;
-  opacity: .8;
-  text-align: center;
-  width: 100%;
-  font-size: 120%;
-  overflow: hidden;
-  line-height: 1.75;
-
+    box-shadow: 5px 0px 5px gray;
+    width: 100%;
+    height: 70px;
+    background-color: #ed8b09;
+    position: fixed;
+    top: 0;
+    opacity: .95;
+    text-align: center;
+    width: 100%;
+    font-size: 120%;
+    overflow: hidden;
+    line-height: 1.75;
 }
 
 a.navBarLink {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 15px;
-  text-align: center;
-  opacity: 1;
-  position: relative;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    opacity: 1;
+    position: relative;
 }
 
 a.navBarLink:hover {
-  color: #0066A0;
-  text-decoration: underline;
+    color: #0066A0;
+    text-decoration: underline;
 }
 
-
-
 div.somespace {
-  height: 2000px;
-  background-color: honeydew;
+    height: 2000px;
+    background-color: honeydew;
+}
+
+#main-nav #fixed-nav {
+    background-color: rgba(253, 154, 9, 0.95);
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+#main-nav #fixed-nav .main-nav-inner {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-nav .main-nav-inner {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 70%;
+    display: -webkit-flex;
+}
+
+#main-nav .nav-link-holder {
+    padding: .4rem;
+    width: 12%;
+}
+
+#main-nav .nav-link-holder a {
+    display: inline-block;
+    color: white;
+    font-size: 110%;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px 1px gray;
+}
+
+#main-nav .nav-link-holder a:hover {
+    color: #F0595C;
+    transition: background-color, 0.25s, cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+#main-nav .logo.symbol img {
+    display: inline-block;
+    position: relative;
+    width: 55px;
+    height: 55px;
 }
