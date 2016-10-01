@@ -3,16 +3,20 @@ body {
     font-family: "Helvetica", sans-serif;
 }
 
-div.header {
+div.header, div.header-join {
     height: 100vh;
     background-position: center;
     background-image: url(/images/pikachuBG.jpg);
     background-size: cover;
-    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+div.header-join {
+  background-image: url(/images/pikachuBG2.jpg);
+
 }
 
 #mainTitle {
@@ -28,11 +32,10 @@ div.header {
     margin-top: -30px;
 }
 
-li {
-    display: inline-block;
-    margin: 20px;
-    text-decoration: none;
-    o
+
+h1.topHeader {
+  margin-top: 75px;
+  margin-left: 16px;
 }
 
 p {
@@ -41,41 +44,64 @@ p {
     color: black;
 }
 
-div.navBar {
-    box-shadow: 5px 0px 5px gray;
-    width: 100%;
-    height: 70px;
-    background-color: #ed8b09;
-    position: fixed;
-    top: 0;
-    opacity: .95;
-    text-align: center;
-    width: 100%;
-    font-size: 120%;
-    overflow: hidden;
-    line-height: 1.75;
-}
-
-a.navBarLink {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 15px;
-    text-align: center;
-    opacity: 1;
-    position: relative;
-}
-
-a.navBarLink:hover {
-    color: #0066A0;
-    text-decoration: underline;
-}
-
 div.somespace {
     height: 2000px;
     background-color: honeydew;
 }
 
+
+#form-div {
+  color: rgb(41, 37, 33);
+  margin-left: 25%;
+}
+
+.form-elements-gender {
+  margin-left: 85px;
+  margin-bottom: 5%;
+  height: 15px;
+
+
+}
+
+.form-elements-button {
+  background-color: white;
+  border: 3px solid #fc9a09;
+  color: black;
+  height: 35px;
+  width: 101%;
+  font-size: 20px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.form-elements-button:hover {
+  color: white;
+  background-color: #fc9a09;
+  cursor: pointer;
+}
+
+.form-elements-button:active {
+  -webkit-transition-duration: 0s; /* Safari */
+  transition-duration: 0s;
+  border: 3px solid #e08907;
+  background-color: #e08907;
+}
+
+.form-elements {
+  width: 100%;
+  height: 23px;
+  margin-bottom: 5%;
+  border-radius: 8px;
+  border: none;
+}
+
+
+/*
+Following css were totally stolen from a website i liked.
+I changed the items as needed to match what I wanted.
+Mostly helped with making a cool nav bar.
+*/
 #main-nav #fixed-nav {
     background-color: rgba(253, 154, 9, 0.95);
     box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
