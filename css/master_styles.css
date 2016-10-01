@@ -58,9 +58,12 @@ div.somespace {
 .form-elements-gender {
   margin-left: 85px;
   margin-bottom: 5%;
+  margin-top: 4px;
   height: 15px;
+}
 
-
+.form-elements-gender:hover, #male-radio:hover {
+  cursor: pointer;
 }
 
 .form-elements-button {
@@ -92,9 +95,44 @@ div.somespace {
   width: 100%;
   height: 23px;
   margin-bottom: 5%;
+  margin-top: 4px;
   border-radius: 8px;
   border: none;
 }
+
+
+
+
+.join-page {
+  background-color: rgb(245, 229, 94);
+}
+
+
+
+
+/*Found this online when looking for a better way to get the birthday field*/
+.datefield {
+    display: inline;
+    padding: 0.3em;
+    background: #FFF;
+    border-radius: 8px;
+    height: 23px;
+    width: 100%;
+}
+
+
+.datefield input {
+    width: 105px;
+    border: none;
+    font-size: 80%;
+    background: none;
+    color: #000;
+    margin-bottom: 6%;
+    margin-top: 8px;
+}
+
+
+
 
 
 /*
@@ -142,6 +180,8 @@ Mostly helped with making a cool nav bar.
 #main-nav .nav-link-holder a:hover {
     color: #F0595C;
     transition: background-color, 0.25s, cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -webkit-transition-duration: 0.25s; /* Safari */
+
 }
 
 #main-nav .logo.symbol img {
