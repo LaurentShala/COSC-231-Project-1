@@ -2,25 +2,46 @@ body {
     margin: 0;
     font-family: "Helvetica", sans-serif;
 }
-
 p {
     max-width: 600px;
     margin: 0 auto 20px;
     color: black;
 }
 
-div.home-imagebar {
-  background-image: url(/images/pikachuBG2.jpg);
-  background-position: bottom;
 
-  height: 100px;
-
+/*Homepage header stuff*/
+div.header, div.header-join, div.header-sitemap {
+    height: 100vh;
+    background-position: center;
+    background-image: url(/images/pikachuBG.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-
 h1.topHeader {
   margin-top: 75px;
   margin-left: 16px;
+}
+#mainTitle {
+    font-size: 100px;
+    color: white;
+    text-shadow: 0px 2px 5px gray;
+}
+#mainSlogan {
+    font-size: 250%;
+    color: white;
+    text-shadow: 0px 2px 5px gray;
+    margin-top: -30px;
+}
+
+
+/*Homepage stuff*/
+div.home-imagebar {
+  background-image: url(/images/pikachuBG2.jpg);
+  background-position: bottom;
+  height: 100px;
 }
 
 
@@ -57,48 +78,21 @@ h1.footer-header {
 }
 
 
-
-
-
-#mainTitle {
-    font-size: 100px;
-    color: white;
-    text-shadow: 0px 2px 5px gray;
+/*Sitemap Page Stuff*/
+.sitemap-page {
+  background-color: rgb(245, 229, 94);
 }
-
-#mainSlogan {
-    font-size: 250%;
-    color: white;
-    text-shadow: 0px 2px 5px gray;
-    margin-top: -30px;
+.sitemap-page .header-sitemap {
+  background-image: url(/images/pikachuBG3.png);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Join Page stuff*/
-div.header, div.header-join {
-    height: 100vh;
-    background-position: center;
-    background-image: url(/images/pikachuBG2.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .join-page {
   background-color: rgb(245, 229, 94);
+}
+.join-page .header-join {
+  background-image: url(/images/pikachuBG2.jpg);
 }
 #form-div {
   color: rgb(41, 37, 33);
@@ -163,16 +157,6 @@ div.header, div.header-join {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*
 Following css were totally stolen from a website i liked.
 I changed the items as needed to match what I wanted.
@@ -186,13 +170,11 @@ Mostly helped with making a cool nav bar.
     width: 100%;
     z-index: 10000;
 }
-
 #main-nav #fixed-nav .main-nav-inner {
     text-align: center;
     justify-content: center;
     align-items: center;
 }
-
 #main-nav .main-nav-inner {
     margin-left: auto;
     margin-right: auto;
@@ -200,12 +182,10 @@ Mostly helped with making a cool nav bar.
     width: 70%;
     display: -webkit-flex;
 }
-
 #main-nav .nav-link-holder {
     padding: .4rem;
     width: 12%;
 }
-
 #main-nav .nav-link-holder a {
     display: inline-block;
     color: white;
@@ -214,14 +194,12 @@ Mostly helped with making a cool nav bar.
     text-decoration: none;
     text-shadow: 0 1px 1px gray;
 }
-
 #main-nav .nav-link-holder a:hover {
     color: #F0595C;
     transition: background-color, 0.25s, cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -webkit-transition-duration: 0.25s; /* Safari */
 
 }
-
 #main-nav .logo.symbol img {
     display: inline-block;
     position: relative;
