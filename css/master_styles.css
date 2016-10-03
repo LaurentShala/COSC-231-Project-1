@@ -3,21 +3,62 @@ body {
     font-family: "Helvetica", sans-serif;
 }
 
-div.header, div.header-join {
-    height: 100vh;
-    background-position: center;
-    background-image: url(/images/pikachuBG.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: black;
 }
 
-div.header-join {
+div.home-imagebar {
   background-image: url(/images/pikachuBG2.jpg);
+  background-position: bottom;
+
+  height: 100px;
 
 }
+
+
+h1.topHeader {
+  margin-top: 75px;
+  margin-left: 16px;
+}
+
+
+/*Footer stuff*/
+div.footer {
+  background-color: black;
+  color: #fff;
+  height: 170px;
+}
+.footer .footer-content {
+  position: relative;;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.footer-iconlist {
+  margin-left: -40px;
+}
+.footer-iconlist-li {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 0px;
+  display: inline-block;
+}
+.footer-image {
+  height: 35px;
+}
+h1.footer-header {
+  color: white;
+  margin: 0;
+  /*text-align: center;*/
+
+
+}
+
+
+
+
 
 #mainTitle {
     font-size: 100px;
@@ -33,39 +74,45 @@ div.header-join {
 }
 
 
-h1.topHeader {
-  margin-top: 75px;
-  margin-left: 16px;
+
+
+
+
+
+
+
+
+
+
+
+
+/*Join Page stuff*/
+div.header, div.header-join {
+    height: 100vh;
+    background-position: center;
+    background-image: url(/images/pikachuBG2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-p {
-    max-width: 600px;
-    margin: 0 auto 20px;
-    color: black;
+.join-page {
+  background-color: rgb(245, 229, 94);
 }
-
-div.somespace {
-    height: 2000px;
-    background-color: honeydew;
-}
-
-
 #form-div {
   color: rgb(41, 37, 33);
   margin-left: 25%;
 }
-
 .form-elements-gender {
   margin-left: 85px;
   margin-bottom: 5%;
   margin-top: 4px;
   height: 15px;
 }
-
 .form-elements-gender:hover, #male-radio:hover {
   cursor: pointer;
 }
-
 .form-elements-button {
   background-color: white;
   border: 3px solid #fc9a09;
@@ -77,20 +124,17 @@ div.somespace {
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
-
 .form-elements-button:hover {
   color: white;
   background-color: #fc9a09;
   cursor: pointer;
 }
-
 .form-elements-button:active {
   -webkit-transition-duration: 0s; /* Safari */
   transition-duration: 0s;
   border: 3px solid #e08907;
   background-color: #e08907;
 }
-
 .form-elements {
   width: 100%;
   height: 23px;
@@ -99,17 +143,6 @@ div.somespace {
   border-radius: 8px;
   border: none;
 }
-
-
-
-
-.join-page {
-  background-color: rgb(245, 229, 94);
-}
-
-
-
-
 /*Found this online when looking for a better way to get the birthday field*/
 .datefield {
     display: inline;
@@ -119,8 +152,6 @@ div.somespace {
     height: 23px;
     width: 100%;
 }
-
-
 .datefield input {
     width: 105px;
     border: none;
@@ -130,6 +161,13 @@ div.somespace {
     margin-bottom: 6%;
     margin-top: 8px;
 }
+
+
+
+
+
+
+
 
 
 
