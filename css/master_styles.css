@@ -2,14 +2,21 @@ body {
     margin: 0;
     font-family: "Helvetica", sans-serif;
 }
+
 p {
     max-width: 600px;
     margin: 0 auto 20px;
     color: black;
 }
 
+h1 {
+  margin: 0;
+}
+
+
 
 /*Homepage header stuff*/
+
 div.header, div.header-join, div.header-sitemap {
     height: 100vh;
     background-position: center;
@@ -20,10 +27,6 @@ div.header, div.header-join, div.header-sitemap {
     justify-content: center;
     align-items: center;
 }
-h1.topHeader {
-  margin-top: 75px;
-  margin-left: 16px;
-}
 #mainTitle {
     font-size: 100px;
     color: white;
@@ -33,111 +36,208 @@ h1.topHeader {
     font-size: 250%;
     color: white;
     text-shadow: 0px 2px 5px gray;
-    margin-top: -30px;
+    /*margin-top: -30px;*/
 }
-
 
 /*Homepage stuff*/
+
 div.home-imagebar {
-  background-image: url(/images/pikachuBG2.jpg);
-  background-position: bottom;
-  height: 100px;
+    background-image: url(/images/pikachuBG2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
 }
+
+
+.home-club-title {
+  /*margin-top: 10px;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 150%;
+  color: rgb(253, 154, 9);
+  text-shadow: 0px 2px 2px gray;
+}
+.home-club-content {
+  width: 60%;
+  height: 400px;
+  margin: auto;
+}
+.home-club-content img {
+  float: left;
+  width: 470px;
+
+}
+.home-club-content p {
+  float: right;
+  margin-right: 50px;
+  margin-top: 40px;
+  width: 350px;
+  font-size: 20px;
+}
+
+.home-events {
+  background-color: rgb(237, 148, 15);
+}
+.home-events-title {
+  /*margin-top: 10px;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 150%;
+  color: white;
+  text-shadow: 0px 2px 5px gray;
+}
+
+.events {
+  width: 35%;
+  margin: auto;
+}
+.events p{
+  text-align: center;
+  color: white;
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+.events hr {
+  margin-bottom: 50px;
+}
+
+.events .event-discription {
+  color:rgb(233, 233, 233);
+  font-size: 20px;
+}
+
+
 
 
 /*Footer stuff*/
 div.footer {
-  background-color: black;
-  color: #fff;
-  height: 170px;
-}
-.footer .footer-content {
-  position: relative;;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+    background-color: black;
+    background-position: center;
+    color: #fff;
+    height: 150px;
 }
 .footer-iconlist {
-  margin-left: -40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer .footer-content {
+  position: relative;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.left-footer-list  {
+  margin-left: -35px;
+
+}
+.footer-header {
+  text-align: center;
+  font-size: 200%;
+}
+.footer-iconlist {
+    margin-left: -40px;
 }
 .footer-iconlist-li {
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 0px;
-  display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 0px;
+    display: inline-block;
 }
 .footer-image {
-  height: 35px;
+    height: 30px;
 }
-h1.footer-header {
-  color: white;
-  margin: 0;
-  /*text-align: center;*/
-
-
+.footer-image:hover {
+    opacity: .5;
 }
+
 
 
 /*Sitemap Page Stuff*/
+
 .sitemap-page {
-  background-color: rgb(245, 229, 94);
+    background-color: rgb(245, 229, 94);
 }
 .sitemap-page .header-sitemap {
-  background-image: url(/images/pikachuBG3.png);
+    background-image: url(/images/pikachuBG3.png);
+}
+.sitemap-links {
+    margin-right: 35%;
+    color: white;
+}
+.sitemap-links a {
+    /*margin-right: 35%;*/
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 70px;
+}
+.sitemap-links ul li {
+    list-style-type: none;
 }
 
 
 /*Join Page stuff*/
+
 .join-page {
-  background-color: rgb(245, 229, 94);
+    background-color: rgb(245, 229, 94);
 }
 .join-page .header-join {
-  background-image: url(/images/pikachuBG2.jpg);
+    background-image: url(/images/pikachuBG2.jpg);
 }
 #form-div {
-  color: rgb(41, 37, 33);
-  margin-left: 25%;
+    color: rgb(41, 37, 33);
+    margin-left: 25%;
 }
 .form-elements-gender {
-  margin-left: 85px;
-  margin-bottom: 5%;
-  margin-top: 4px;
-  height: 15px;
+    margin-left: 85px;
+    margin-bottom: 5%;
+    margin-top: 4px;
+    height: 15px;
 }
 .form-elements-gender:hover, #male-radio:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 .form-elements-button {
-  background-color: white;
-  border: 3px solid #fc9a09;
-  color: black;
-  height: 35px;
-  width: 101%;
-  font-size: 20px;
-  border-radius: 8px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+    background-color: white;
+    border: 3px solid #fc9a09;
+    color: black;
+    height: 35px;
+    width: 101%;
+    font-size: 20px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
 }
 .form-elements-button:hover {
-  color: white;
-  background-color: #fc9a09;
-  cursor: pointer;
+    color: white;
+    background-color: #fc9a09;
+    cursor: pointer;
 }
 .form-elements-button:active {
-  -webkit-transition-duration: 0s; /* Safari */
-  transition-duration: 0s;
-  border: 3px solid #e08907;
-  background-color: #e08907;
+    -webkit-transition-duration: 0s;
+    /* Safari */
+    transition-duration: 0s;
+    border: 3px solid #e08907;
+    background-color: #e08907;
 }
 .form-elements {
-  width: 100%;
-  height: 23px;
-  margin-bottom: 5%;
-  margin-top: 4px;
-  border-radius: 8px;
-  border: none;
+    width: 100%;
+    height: 23px;
+    margin-bottom: 5%;
+    margin-top: 4px;
+    border-radius: 8px;
+    border: none;
 }
+
+
 /*Found this online when looking for a better way to get the birthday field*/
+
 .datefield {
     display: inline;
     padding: 0.3em;
@@ -146,6 +246,7 @@ h1.footer-header {
     height: 23px;
     width: 100%;
 }
+
 .datefield input {
     width: 105px;
     border: none;
@@ -162,6 +263,7 @@ Following css were totally stolen from a website i liked.
 I changed the items as needed to match what I wanted.
 Mostly helped with making a cool nav bar.
 */
+
 #main-nav #fixed-nav {
     background-color: rgba(253, 154, 9, 0.95);
     box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
@@ -170,11 +272,13 @@ Mostly helped with making a cool nav bar.
     width: 100%;
     z-index: 10000;
 }
+
 #main-nav #fixed-nav .main-nav-inner {
     text-align: center;
     justify-content: center;
     align-items: center;
 }
+
 #main-nav .main-nav-inner {
     margin-left: auto;
     margin-right: auto;
@@ -182,10 +286,12 @@ Mostly helped with making a cool nav bar.
     width: 70%;
     display: -webkit-flex;
 }
+
 #main-nav .nav-link-holder {
     padding: .4rem;
     width: 12%;
 }
+
 #main-nav .nav-link-holder a {
     display: inline-block;
     color: white;
@@ -194,12 +300,14 @@ Mostly helped with making a cool nav bar.
     text-decoration: none;
     text-shadow: 0 1px 1px gray;
 }
+
 #main-nav .nav-link-holder a:hover {
     color: #F0595C;
     transition: background-color, 0.25s, cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    -webkit-transition-duration: 0.25s; /* Safari */
-
+    -webkit-transition-duration: 0.25s;
+    /* Safari */
 }
+
 #main-nav .logo.symbol img {
     display: inline-block;
     position: relative;
