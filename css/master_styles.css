@@ -122,6 +122,49 @@ h1 {
 }
 
 
+.fun-facts {
+  height: 470px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.fun-facts h1 {
+  /*padding-top: 20px;*/
+  /*margin-bottom: -40px;*/
+  text-align: center;
+  font-size: 70px;
+  color: rgb(253, 154, 9);
+  text-shadow: 0px 2px 2px gray;
+}
+
+.fact1, .fact2, .fact3 {
+  position: relative;
+  margin-top: 25px;
+  float: left;
+  color: white;
+  width: 25%;
+  height: 350px;
+  background-color: #fc9a09;
+  box-shadow: 0 7px 10px gray;
+}
+
+.fact1 p, .fact2 p, .fact3 p {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 60%;
+  margin-right: -50%;
+  transform: translate(-60%, -40%);
+  font-size: 200%;
+
+}
+
+.fact1 {
+  margin-left: 7.5%;
+}
+.fact1, .fact2{
+  margin-right: 5%;
+}
 
 
 /*Homepage header stuff*/
