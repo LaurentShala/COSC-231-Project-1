@@ -208,16 +208,6 @@ h1 {
   padding-left: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*Homepage header stuff*/
 .header, .header-join, .header-sitemap, .header-pikachu, .header-about {
     height: 100vh;
@@ -311,12 +301,6 @@ div.home-imagebar {
 }
 
 
-
-
-
-
-
-
 .home-events {
   background-color: #fc9a09;
   height: 470px;
@@ -402,17 +386,166 @@ div.footer {
 
 
 
+
+
+
+
+
+
 .about-page .header-about {
     background-image: url(/images/pikachuBG5.jpg);
 }
-
 .header-about h1 {
   font-size: 100px;
   color: white;
+  text-align: center;
   text-shadow: 0px 5px 15px black;
-  margin-top: -100px;
 }
 
+.about-club {
+  height: auto;
+}
+.about-club h1 {
+  text-align: center;
+  font-size: 70px;
+  padding-top: 20px;
+  color: rgb(253, 154, 9);
+  text-shadow: 0px 2px 2px gray;
+}
+.about-club {
+  width: 100%;
+  margin: auto;
+}
+.about-club-content {
+  width: 80%;
+  margin: auto;
+}
+.about-club-description {
+  padding-top: 50px;
+}
+.about-club-description p {
+  text-align: right;
+  font-size: 25px;
+  margin-top: -10px;
+}
+.about-club-image img{
+  float: right;
+  width: 30%;
+  margin: auto;
+  padding-left: 40px;
+}
+
+.accomplish {
+  margin-top: 50px;
+  height: 360px;
+  background-color: rgb(253, 154, 9);
+}
+.accomplish-content {
+  width: 80%;
+  margin: auto;
+}
+.accomplish-title {
+  float: left;
+  width: 30%;
+}
+.accomplish-description {
+  float: left;
+  width: 70%;
+}
+.accomplish-description p {
+  color: white;
+  font-size:25px;
+  margin-top: 70px;
+  margin-left: 175px;
+
+}
+.accomplish-title h1 {
+  color: white;
+  font-size:85px;
+  margin-top: 40px;
+}
+
+
+.club-members {
+  width: 100%;
+  height: 1240px;
+}
+.club-members h1 {
+  text-align: center;
+  font-size: 70px;
+  padding-top: 30px;
+  color: rgb(253, 154, 9);
+  text-shadow: 0px 2px 2px gray;
+  margin-bottom: -70px;
+}
+.members-right {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+}
+.member-text-right {
+  padding-top: 35px;
+}
+.member-text-right p {
+  text-align: left;
+  margin-left: 25%;
+  font-size: 25px;
+}
+.member-image-right img {
+  float: left;
+  width: 250px;
+  height: 250px;
+}
+
+
+.members-left {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+}
+.member-text-left {
+  padding-top: 35px;
+}
+.member-text-left p {
+  text-align: right;
+  /*margin-left: 25%;*/
+  font-size: 25px;
+}
+.member-image-left img {
+  float: right;
+  width: 250px;
+  height: 250px;
+}
+
+.club-join {
+
+}
+.club-join input {
+  width: 100%;
+  color: white;
+  margin: auto;
+  background-color: #fc9a09;
+  height: 70px;
+  font-size: 30px;
+  border: none;
+  /*border-radius: 8px;*/
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+
+}
+.club-join input:hover {
+  color: black;
+  border: 5px solid #fc9a09;
+  background-color: white;
+  cursor: pointer;
+}
+.club-join input:active {
+  -webkit-transition-duration: 0s;
+  /* Safari */
+  transition-duration: 0s;
+  border: 3px solid #fc9a09;
+  background-color: #fc9a09;
+}
 
 
 
