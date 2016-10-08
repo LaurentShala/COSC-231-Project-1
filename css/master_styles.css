@@ -3,7 +3,7 @@ body {
     font-family: "Helvetica", sans-serif;
 }
 p {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto 20px;
     color: black;
 }
@@ -17,7 +17,7 @@ h1 {
 }
 
 /*Homepage header stuff*/
-div.header, div.header-join, div.header-sitemap {
+.header, .header-join, .header-sitemap, .header-pikachu {
     height: 100vh;
     background-position: center;
     background-image: url(/images/pikachuBG.jpg);
@@ -84,7 +84,7 @@ div.home-imagebar {
   text-align: center;
 }
 
-.home-club-button button {
+.home-club-button input {
   width: 42%;
   margin: auto;
   background-color: white;
@@ -96,12 +96,12 @@ div.home-imagebar {
   transition-duration: 0.4s;
 
 }
-.home-club-button button:hover {
+.home-club-button input:hover {
   color: white;
   background-color: #fc9a09;
   cursor: pointer;
 }
-.home-club-button button:active {
+.home-club-button input:active {
   -webkit-transition-duration: 0s;
   /* Safari */
   transition-duration: 0s;
@@ -193,6 +193,42 @@ div.footer {
 .footer-image:hover {
     opacity: .5;
 }
+
+
+
+.pikachu-page .header-pikachu {
+  background-image: url(/images/pikachuBG4.png);
+}
+.header-pikachu h1 {
+  margin-top: 120px;
+  font-size: 100px;
+  color: white;
+  text-shadow: 0px 5px 15px gray;
+}
+
+.pikachu-evolution {
+  width: 100%;
+}
+.pikachu-evolution h1{
+  padding-top: 20px;
+  padding-bottom: 120px;
+  text-align: center;
+  font-size: 70px;
+  color: rgb(253, 154, 9);
+  text-shadow: 0px 2px 2px gray;
+  background-image: url(/images/evolution.jpg);
+  width: 70%;
+  margin: auto;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.evolution-image {
+
+}
+
 
 
 
