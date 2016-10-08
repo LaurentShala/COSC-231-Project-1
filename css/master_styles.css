@@ -2,11 +2,7 @@ body {
     margin: 0;
     font-family: "Helvetica", sans-serif;
 }
-p {
-    max-width: 1000px;
-    margin: 0 auto 20px;
-    color: black;
-}
+
 h1 {
   margin: 0;
 }
@@ -15,6 +11,118 @@ h1 {
 .topHeader {
   margin-top: 75px;
 }
+
+
+
+.pikachu-page .header-pikachu {
+  background-image: url(/images/pikachuBG4.png);
+}
+.header-pikachu h1 {
+  margin-top: 120px;
+  font-size: 100px;
+  color: white;
+  text-shadow: 0px 5px 15px gray;
+}
+
+.pikachu-evolution {
+  width: 100%;
+}
+.pikachu-evolution h1{
+  padding-top: 20px;
+  margin-bottom: -40px;
+  text-align: center;
+  font-size: 70px;
+  color: rgb(253, 154, 9);
+  text-shadow: 0px 2px 2px gray;
+}
+.pikachu-evolution p {
+  padding-top: 10px;
+  /*text-align: center;*/
+  font-size: 25px;
+  width: 80%;
+  margin: auto;
+}
+.evolution-image {
+  background-image: url(/images/evolution.jpg);
+  width: 70%;
+  margin: auto;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.pikachu-powers {
+  width: 100%;
+  background-color: #fc9a09;
+  height: 860px;
+  margin-top: 30px;
+}
+.pikachu-powers h1 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 65px;
+  color: white;
+  text-shadow: 0px 2px 5px gray;
+}
+.pikachu-powers-content h1 {
+  margin-top: 100px;
+}
+.powers-content-left{
+  width: 80%;
+  margin: auto;
+  margin-top: -50px;
+}
+.power.description {
+  float: left;
+}
+.power-type p {
+  padding-top: 20px;
+  color: white;
+  font-size: 25px;
+}
+.power-text p {
+  color: white;
+  font-size: 25px;
+}
+.power-image img {
+  float: left;
+  width: 350px;
+  padding-right: 40px;
+}
+.weakness-content-right{
+  width: 80%;
+  margin: auto;
+  margin-top: -50px;
+}
+.weakness.description {
+  float: right;
+}
+.weakness-type p {
+  text-align: right;
+  padding-top: 20px;
+  color: white;
+  font-size: 25px;
+}
+.weakness-text p {
+  text-align: right;
+  color: white;
+  font-size: 25px;
+}
+.weakness-image img {
+  float: right;
+  width: 350px;
+  padding-left: 40px;
+}
+.power-image img, .weakness-image img {
+  width: 300px;
+  height: 300px;
+}
+
+
+
 
 /*Homepage header stuff*/
 .header, .header-join, .header-sitemap, .header-pikachu {
@@ -36,7 +144,6 @@ h1 {
     font-size: 250%;
     color: white;
     text-shadow: 0px 2px 5px gray;
-    /*margin-top: -30px;*/
 }
 
 /*Homepage stuff*/
@@ -195,39 +302,6 @@ div.footer {
 }
 
 
-
-.pikachu-page .header-pikachu {
-  background-image: url(/images/pikachuBG4.png);
-}
-.header-pikachu h1 {
-  margin-top: 120px;
-  font-size: 100px;
-  color: white;
-  text-shadow: 0px 5px 15px gray;
-}
-
-.pikachu-evolution {
-  width: 100%;
-}
-.pikachu-evolution h1{
-  padding-top: 20px;
-  padding-bottom: 120px;
-  text-align: center;
-  font-size: 70px;
-  color: rgb(253, 154, 9);
-  text-shadow: 0px 2px 2px gray;
-  background-image: url(/images/evolution.jpg);
-  width: 70%;
-  margin: auto;
-  height: 350px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-}
-.evolution-image {
-
-}
 
 
 
