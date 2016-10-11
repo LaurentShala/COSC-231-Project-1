@@ -12,8 +12,6 @@ h1 {
   margin-top: 75px;
 }
 
-
-
 .pikachu-page .header-pikachu {
   background-image: url(/images/pikachuBG4.png);
 }
@@ -37,7 +35,7 @@ h1 {
 }
 .pikachu-evolution p {
   padding-top: 10px;
-  /*text-align: center;*/
+  text-align: center;
   font-size: 25px;
   width: 80%;
   margin: auto;
@@ -56,12 +54,12 @@ h1 {
 .pikachu-powers {
   width: 100%;
   background-color: #fc9a09;
-  height: 860px;
+  height: 700px;
   margin-top: 30px;
 }
 .pikachu-powers h1 {
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   text-align: center;
   font-size: 65px;
   color: white;
@@ -96,10 +94,14 @@ h1 {
 
 
 .weakness-content-right{
-  width: 80%;
+  width: 60%;
   margin: auto;
-  margin-top: -50px;
+  margin-top: -80px;
 }
+.weakness-content-right h1 {
+  font-size: 40px;
+}
+
 .weakness.description {
   float: right;
 }
@@ -116,10 +118,10 @@ h1 {
 }
 .weakness-image img {
   float: right;
-  width: 350px;
+  width: 200px;
   padding-left: 40px;
 }
-.power-image img, .weakness-image img {
+.power-image img {
   width: 300px;
   height: 300px;
 }
@@ -132,8 +134,6 @@ h1 {
   margin-bottom: 20px;
 }
 .fun-facts h1 {
-  /*padding-top: 20px;*/
-  /*margin-bottom: -40px;*/
   text-align: center;
   font-size: 70px;
   color: rgb(253, 154, 9);
@@ -152,10 +152,10 @@ h1 {
 .fact1 p, .fact2 p, .fact3 p {
   position: absolute;
   text-align: center;
-  top: 40%;
-  left: 60%;
-  margin-right: -50%;
-  transform: translate(-60%, -40%);
+  top: 35%;
+  left: 65%;
+  margin-right: -60%;
+  transform: translate(-65%, -35%);
   font-size: 200%;
 
 }
@@ -260,9 +260,9 @@ div.home-imagebar {
 .home-club-content p {
   float: right;
   margin-right: 50px;
-  margin-top: 25px;
+  margin-top: 20px;
   width: 350px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 
@@ -425,14 +425,15 @@ div.footer {
 }
 .about-club-description p {
   text-align: right;
-  font-size: 25px;
+  font-size: 23px;
   margin-top: -10px;
 }
 .about-club-image img{
   float: right;
-  width: 30%;
+  /*width: 25%;*/
+  height: 250px;
   margin: auto;
-  padding-left: 40px;
+  /*padding-left: 40px;*/
 }
 
 .accomplish {
@@ -468,12 +469,13 @@ div.footer {
 
 .club-members {
   width: 100%;
-  height: 1240px;
+  height: 1000px;
 }
 .club-members h1 {
   text-align: center;
   font-size: 70px;
   padding-top: 30px;
+  padding-bottom: 50px;
   color: rgb(253, 154, 9);
   text-shadow: 0px 2px 2px gray;
   margin-bottom: -70px;
@@ -481,10 +483,9 @@ div.footer {
 .members-right {
   width: 80%;
   margin: auto;
-  padding-top: 50px;
 }
 .member-text-right {
-  padding-top: 35px;
+  padding-top: 20px;
 }
 .member-text-right p {
   text-align: left;
@@ -501,10 +502,9 @@ div.footer {
 .members-left {
   width: 80%;
   margin: auto;
-  padding-top: 50px;
 }
 .member-text-left {
-  padding-top: 35px;
+  padding-top: 25px;
 }
 .member-text-left p {
   text-align: right;
