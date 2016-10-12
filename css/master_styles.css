@@ -430,7 +430,7 @@ div.footer {
 }
 
 .about-club {
-    height: auto;
+    height: 330px;
 }
 
 .about-club h1 {
@@ -447,7 +447,7 @@ div.footer {
 }
 
 .about-club-content {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
@@ -457,14 +457,14 @@ div.footer {
 
 .about-club-description p {
     text-align: right;
-    font-size: 23px;
-    margin-top: -10px;
+    font-size: 25px;
+    margin-top: 10px;
 }
 
 .about-club-image img {
     float: right;
     /*width: 25%;*/
-    height: 250px;
+    height: 270px;
     margin: auto;
     /*padding-left: 40px;*/
 }
@@ -492,8 +492,8 @@ div.footer {
 
 .accomplish-description p {
     color: white;
-    font-size: 25px;
-    margin-top: 70px;
+    font-size: 30px;
+    margin-top: 80px;
     margin-left: 175px;
 }
 
@@ -505,7 +505,11 @@ div.footer {
 
 .club-members {
     width: 100%;
-    height: 1000px;
+    height: auto;
+}
+
+.club-members-content {
+  margin-bottom: 60px;
 }
 
 .club-members h1 {
@@ -524,19 +528,18 @@ div.footer {
 }
 
 .member-text-right {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .member-text-right p {
     text-align: left;
-    margin-left: 25%;
-    font-size: 25px;
+    margin-left: 12%;
+    font-size: 30px;
 }
 
 .member-image-right img {
     float: left;
-    width: 250px;
-    height: 250px;
+    height: 175px;
 }
 
 .members-left {
@@ -545,19 +548,19 @@ div.footer {
 }
 
 .member-text-left {
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .member-text-left p {
     text-align: right;
-    /*margin-left: 25%;*/
-    font-size: 25px;
+    margin-right: 12%;
+    font-size: 30px;
 }
 
 .member-image-left img {
     float: right;
-    width: 250px;
-    height: 250px;
+    margin-top: 20px;
+    height: 150px;
 }
 
 .club-join {}
