@@ -1,20 +1,14 @@
 /*Main style defaults*/
 body {
     margin: 0;
-    font-family: "Helvetica", sans-serif;
-}
-
+    font-family: "Helvetica", sans-serif;}
 h1 {
-    margin: 0;
-}
-
+    margin: 0;}
 /*This HR snippet was found on the internet*/
 hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));}
 
 /*Homepage stuff*/
 .header, .header-join, .header-sitemap, .header-pikachu, .header-about {
@@ -25,54 +19,38 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
+    align-items: center;}
 #mainTitle {
     font-size: 100px;
     color: white;
-    text-shadow: 0px 2px 5px gray;
-}
-
+    text-shadow: 0px 2px 5px gray;}
 #mainSlogan {
     font-size: 250%;
     color: white;
-    text-shadow: 0px 2px 5px gray;
-}
-
+    text-shadow: 0px 2px 5px gray;}
 .home-club-title {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     font-size: 170%;
     color: rgb(253, 154, 9);
-    text-shadow: 0px 2px 2px gray;
-}
-
+    text-shadow: 0px 2px 2px gray;}
 .home-club-content {
     width: 60%;
     height: 440px;
-    margin: auto;
-}
-
+    margin: auto;}
 .home-club-content img {
-    width: 430px;
-}
-
+    width: 430px;}
 .home-club-content p {
     float: right;
     margin-top: 30px;
     width: 500px;
-    font-size: 30px;
-}
-
+    font-size: 30px;}
 .home-club-button {
     margin-top: -50px;
     margin-bottom: 20px;
     width: 100%;
-    text-align: center;
-}
-
+    text-align: center;}
 .home-club-button input {
     width: 42%;
     margin: auto;
@@ -81,152 +59,100 @@ hr {
     height: 40px;
     font-size: 25px;
     -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-
+    transition-duration: 0.4s;}
 .home-club-button input:hover {
     color: white;
     background-color: #fc9a09;
-    cursor: pointer;
-}
-
+    cursor: pointer;}
 .home-club-button input:active {
     -webkit-transition-duration: 0s;
     transition-duration: 0s;
     border: 3px solid #e08907;
-    background-color: #e08907;
-}
-
+    background-color: #e08907;}
 .home-events {
     background-color: #fc9a09;
-    height: 470px;
-}
-
+    height: 500px;}
 .home-events-title {
     padding-top: 20px;
     padding-bottom: 30px;
     text-align: center;
     font-size: 170%;
     color: white;
-    text-shadow: 0px 2px 5px gray;
-}
-
+    text-shadow: 0px 2px 5px gray;}
 .events {
     width: 43%;
-    margin: auto;
-}
-
+    margin: auto;}
 .events p {
     text-align: center;
     color: white;
-    font-size: 150%;
-}
-
+    font-size: 150%;}
 .events hr {
     color: white;
-    margin-bottom: 25px;
-}
-
+    margin-bottom: 25px;}
 .events .event-discription {
     color: rgb(233, 233, 233);
     font-size: 20px;
-    margin-top: -20px;
-}
-
+    margin-top: -20px;}
 
 /*About page stuff*/
 .about-page .header-about {
-    background-image: url(../images/pikachuBG5.jpg);
-}
-
+    background-image: url(../images/pikachuBG5.jpg);}
 .header-about h1 {
     font-size: 100px;
     color: white;
     text-align: center;
-    text-shadow: 0px 5px 15px black;
-}
-
+    text-shadow: 0px 5px 15px black;}
 .about-club {
-    height: 375px;
-}
-
+    height: 375px;}
 .about-club h1 {
     text-align: center;
     font-size: 70px;
     padding-top: 20px;
     color: rgb(253, 154, 9);
-    text-shadow: 0px 2px 2px gray;
-}
-
+    text-shadow: 0px 2px 2px gray;}
 .about-club {
     width: 100%;
-    margin: auto;
-}
-
+    margin: auto;}
 .about-club-content {
     width: 70%;
-    margin: auto;
-}
-
+    margin: auto;}
 .about-club-description {
-    padding-top: 50px;
-}
-
+    padding-top: 50px;}
 .about-club-description p {
     text-align: right;
     font-size: 30px;
-    margin-top: -10px;
-}
-
+    margin-top: -10px;}
 .about-club-image img {
     float: right;
     height: 270px;
-    margin: auto;
-}
-
+    margin: auto;}
 .accomplish {
     margin-top: 50px;
     height: 360px;
-    background-color: rgb(253, 154, 9);
-}
-
+    background-color: rgb(253, 154, 9);}
 .accomplish-content {
     width: 80%;
-    margin: auto;
-}
-
+    margin: auto;}
 .accomplish-title {
     float: left;
-    width: 30%;
-}
-
+    width: 30%;}
 .accomplish-description {
     float: left;
-    width: 70%;
-}
-
+    width: 70%;}
 .accomplish-description p {
     color: white;
     font-size: 30px;
     margin-top: 80px;
-    margin-left: 175px;
-}
-
+    margin-left: 175px;}
 .accomplish-title h1 {
     color: white;
     font-size: 85px;
-    margin-top: 40px;
-}
-
+    margin-top: 40px;}
 .club-members {
     width: 100%;
-    height: auto;
-}
-
+    height: auto;}
 .club-members-content {
-    margin-bottom: 60px;
-}
-
+    margin-bottom: 60px;}
 .club-members h1 {
     text-align: center;
     font-size: 70px;
@@ -234,50 +160,32 @@ hr {
     padding-bottom: 50px;
     color: rgb(253, 154, 9);
     text-shadow: 0px 2px 2px gray;
-    margin-bottom: -70px;
-}
-
+    margin-bottom: -70px;}
 .members-right {
     width: 80%;
-    margin: auto;
-}
-
+    margin: auto;}
 .member-text-right {
-    padding-top: 30px;
-}
-
+    padding-top: 30px;}
 .member-text-right p {
     text-align: left;
     margin-left: 12%;
-    font-size: 30px;
-}
-
+    font-size: 30px;}
 .member-image-right img {
     float: left;
-    height: 175px;
-}
-
+    height: 175px;}
 .members-left {
     width: 80%;
-    margin: auto;
-}
-
+    margin: auto;}
 .member-text-left {
-    padding-top: 30px;
-}
-
+    padding-top: 30px;}
 .member-text-left p {
     text-align: right;
     margin-right: 12%;
-    font-size: 30px;
-}
-
+    font-size: 30px;}
 .member-image-left img {
     float: right;
     margin-top: 20px;
-    height: 150px;
-}
-
+    height: 150px;}
 .club-join input {
     width: 100%;
     color: white;
@@ -287,96 +195,66 @@ hr {
     font-size: 30px;
     border: none;
     -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-}
-
+    transition-duration: 0.2s;}
 .club-join input:hover {
     color: black;
     border: 5px solid #fc9a09;
     background-color: white;
-    cursor: pointer;
-}
-
+    cursor: pointer;}
 .club-join input:active {
     -webkit-transition-duration: 0s;
     transition-duration: 0s;
     border: 3px solid #fc9a09;
-    background-color: #fc9a09;
-}
-
+    background-color: #fc9a09;}
 
 /*Pikachu page stuff*/
 .pikachu {
     width: 100%;
     height: 450px;
-    background-color: #fc9a09;
-}
-
+    background-color: #fc9a09;}
 .pikachu h1 {
     padding-top: 20px;
     text-align: center;
     font-size: 65px;
     color: white;
-    text-shadow: 0px 2px 5px gray;
-}
-
+    text-shadow: 0px 2px 5px gray;}
 .pikachu-content {
     width: 80%;
-    margin: auto;
-}
-
+    margin: auto;}
 .pikachu-description {
-    padding-top: 10px;
-}
-
+    padding-top: 10px;}
 .pikachu-description p {
     color: white;
     text-align: right;
-    font-size: 30px;
-}
-
+    font-size: 30px;}
 .pikachu-image {
-    height: 100%;
-}
-
+    height: 100%;}
 .pikachu-image img {
     float: right;
     height: 350px;
-    padding-left: 40px;
-}
-
+    padding-left: 40px;}
 .pikachu-page .header-pikachu {
-    background-image: url(../images/PikachuBG4.png);
-}
-
+    background-image: url(../images/PikachuBG4.png);}
 .header-pikachu h1 {
     margin-top: 120px;
     font-size: 100px;
     color: white;
-    text-shadow: 0px 5px 15px gray;
-}
-
+    text-shadow: 0px 5px 15px gray;}
 .pikachu-evolution {
-    width: 100%;
-}
-
+    width: 100%;}
 .pikachu-evolution h1 {
     padding-top: 20px;
     margin-bottom: -40px;
     text-align: center;
     font-size: 70px;
     color: rgb(253, 154, 9);
-    text-shadow: 0px 2px 2px gray;
-}
-
+    text-shadow: 0px 2px 2px gray;}
 .pikachu-evolution p {
     padding-top: 10px;
     text-align: center;
     font-size: 25px;
     width: 80%;
-    margin: auto;
-}
-
+    margin: auto;}
 .evolution-image {
     background-image: url(../images/evolution.jpg);
     width: 70%;
@@ -384,108 +262,72 @@ hr {
     height: 350px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-}
-
+    background-size: contain;}
 .pikachu-powers {
     width: 100%;
     background-color: #fc9a09;
     height: 700px;
-    margin-top: 30px;
-}
-
+    margin-top: 30px;}
 .pikachu-powers h1 {
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
     font-size: 65px;
     color: white;
-    text-shadow: 0px 2px 5px gray;
-}
-
+    text-shadow: 0px 2px 5px gray;}
 .pikachu-powers-content h1 {
-    margin-top: 100px;
-}
-
+    margin-top: 100px;}
 .powers-content-left {
     width: 80%;
     margin: auto;
-    margin-top: -50px;
-}
-
+    margin-top: -50px;}
 .power.description {
-    float: left;
-}
-
+    float: left;}
 .power-type p {
     padding-top: 20px;
     color: white;
-    font-size: 25px;
-}
-
+    font-size: 25px;}
 .power-text p {
     color: white;
-    font-size: 25px;
-}
-
+    font-size: 25px;}
 .power-image img {
     float: left;
     width: 350px;
-    padding-right: 40px;
-}
-
+    padding-right: 40px;}
 .weakness-content-right {
     width: 60%;
     margin: auto;
-    margin-top: -80px;
-}
-
+    margin-top: -80px;}
 .weakness-content-right h1 {
-    font-size: 40px;
-}
-
+    font-size: 40px;}
 .weakness.description {
-    float: right;
-}
-
+    float: right;}
 .weakness-type p {
     text-align: right;
     padding-top: 20px;
     color: white;
-    font-size: 25px;
-}
-
+    font-size: 25px;}
 .weakness-text p {
     text-align: right;
     color: white;
-    font-size: 25px;
-}
-
+    font-size: 25px;}
 .weakness-image img {
     float: right;
     width: 200px;
-    padding-left: 40px;
-}
-
+    padding-left: 40px;}
 .power-image img {
     width: 300px;
-    height: 300px;
-}
-
+    height: 300px;}
 .fun-facts {
     height: 470px;
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 20px;
-}
-
+    margin-bottom: 20px;}
 .fun-facts h1 {
     text-align: center;
     font-size: 70px;
     color: rgb(253, 154, 9);
-    text-shadow: 0px 2px 2px gray;
-}
-
+    text-shadow: 0px 2px 2px gray;}
 .fact1, .fact2, .fact3 {
     position: relative;
     margin-top: 25px;
@@ -494,9 +336,7 @@ hr {
     width: 25%;
     height: 350px;
     background-color: #fc9a09;
-    box-shadow: 0 7px 10px gray;
-}
-
+    box-shadow: 0 7px 10px gray;}
 .fact1 p, .fact2 p, .fact3 p {
     position: absolute;
     text-align: center;
@@ -504,50 +344,32 @@ hr {
     left: 65%;
     margin-right: -60%;
     transform: translate(-65%, -35%);
-    font-size: 200%;
-}
-
+    font-size: 200%;}
 .fact1 {
-    margin-left: 7.5%;
-}
-
+    margin-left: 7.5%;}
 .fact1, .fact2 {
-    margin-right: 5%;
-}
-
+    margin-right: 5%;}
 
 /*Join Page stuff*/
 .join-page {
-    background-color: rgb(245, 229, 94);
-}
-
+    background-color: rgb(245, 229, 94);}
 .join-page .header-join {
     background-image: url(../images/pikachuBG2.jpg);
     height: 100vh;
     background-position: center;
-    background-size: cover;
-}
-
+    background-size: cover;}
 #form-div {
     color: rgb(41, 37, 33);
-    margin-left: 35%;
-}
-
+    margin-left: 35%;}
 .form-elements-gender {
     margin-left: 85px;
     margin-bottom: 20px;
     margin-top: 10px;
-    height: 15px;
-}
-
+    height: 15px;}
 .form-elements-gender:hover, #male-radio:hover {
-    cursor: pointer;
-}
-
+    cursor: pointer;}
 .join-us-form label {
-    font-size: 18px;
-}
-
+    font-size: 18px;}
 .form-elements-button {
     background-color: white;
     border: 3px solid #fc9a09;
@@ -557,20 +379,14 @@ hr {
     font-size: 20px;
     border-radius: 8px;
     -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-
+    transition-duration: 0.4s;}
 .form-elements-button:hover {
     color: white;
     background-color: #fc9a09;
-    cursor: pointer;
-}
-
+    cursor: pointer;}
 .form-elements-button:active {
     border: 3px solid #e08907;
-    background-color: #e08907;
-}
-
+    background-color: #e08907;}
 .form-elements {
     width: 100%;
     font-size: 15px;
@@ -578,88 +394,58 @@ hr {
     margin-bottom: 5%;
     margin-top: 4px;
     border-radius: 8px;
-    border: none;
-}
-
+    border: none;}
 
 
 /*Sitemap Page Stuff*/
 .sitemap-page {
-    background-color: rgb(245, 229, 94);
-}
-
+    background-color: rgb(245, 229, 94);}
 .sitemap-page .header-sitemap {
-    background-image: url(../images/pikachuBG3.png);
-}
-
+    background-image: url(../images/pikachuBG3.png);}
 .sitemap-links {
     margin-right: 35%;
-    color: white;
-}
-
+    color: white;}
 .sitemap-links a {
     color: white;
     text-decoration: none;
     list-style-type: none;
-    font-size: 70px;
-}
-
+    font-size: 70px;}
 .sitemap-links ul li {
-    list-style-type: none;
-}
-
+    list-style-type: none;}
 
 /*Footer stuff*/
 div.footer {
     background-color: black;
     background-position: center;
     color: #fff;
-    height: 150px;
-}
-
+    height: 150px;}
 .footer-iconlist {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-}
-
+    align-items: center;}
 .footer .footer-content {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
+    transform: translate(-50%, -50%);}
 .left-footer-list {
-    margin-left: -35px;
-}
-
+    margin-left: -35px;}
 .footer-header {
     text-align: center;
-    font-size: 200%;
-}
-
+    font-size: 200%;}
 .footer-iconlist {
-    margin-left: -40px;
-}
-
+    margin-left: -40px;}
 .footer-iconlist-li {
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 0px;
-    display: inline-block;
-}
-
+    display: inline-block;}
 .footer-image {
-    height: 30px;
-}
-
+    height: 30px;}
 .footer-image:hover {
-    opacity: .5;
-}
-
+    opacity: .5;}
 
 /*
 Following css were totally stolen from a website i liked.
@@ -673,46 +459,34 @@ Mostly helped with making a cool nav bar.
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10000;
-}
-
+    z-index: 10000;}
 #main-nav #fixed-nav .main-nav-inner {
     text-align: center;
     justify-content: center;
-    align-items: center;
-}
-
+    align-items: center;}
 #main-nav .main-nav-inner {
     margin-left: auto;
     margin-right: auto;
     position: relative;
     width: 70%;
     display: -webkit-flex;
-}
-
+    display: flex;}
 #main-nav .nav-link-holder {
     padding: .4rem;
-    width: 12%;
-}
-
+    width: 12%;}
 #main-nav .nav-link-holder a {
     display: inline-block;
     color: white;
     font-size: 110%;
     font-weight: bold;
     text-decoration: none;
-    text-shadow: 0 1px 1px gray;
-}
-
+    text-shadow: 0 1px 1px gray;}
 #main-nav .nav-link-holder a:hover {
     color: #F0595C;
     transition: background-color, 0.25s, cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    -webkit-transition-duration: 0.25s;
-}
-
+    -webkit-transition-duration: 0.25s;}
 #main-nav .logo.symbol img {
     display: inline-block;
     position: relative;
     width: 55px;
-    height: 55px;
-}
+    height: 55px;}
