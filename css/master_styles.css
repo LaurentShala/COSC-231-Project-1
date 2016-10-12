@@ -1,3 +1,4 @@
+/*Main style defaults*/
 body {
     margin: 0;
     font-family: "Helvetica", sans-serif;
@@ -7,19 +8,15 @@ h1 {
     margin: 0;
 }
 
+/*This HR snippet was found on the internet*/
 hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.topHeader {
-    margin-top: 75px;
-}
 
-
-/*Homepage header stuff*/
-
+/*Homepage stuff*/
 .header, .header-join, .header-sitemap, .header-pikachu, .header-about {
     height: 100vh;
     background-position: center;
@@ -43,6 +40,310 @@ hr {
     text-shadow: 0px 2px 5px gray;
 }
 
+.home-club-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 170%;
+    color: rgb(253, 154, 9);
+    text-shadow: 0px 2px 2px gray;
+}
+
+.home-club-content {
+    width: 60%;
+    height: 440px;
+    margin: auto;
+}
+
+.home-club-content img {
+    width: 430px;
+}
+
+.home-club-content p {
+    float: right;
+    margin-top: 30px;
+    width: 500px;
+    font-size: 30px;
+}
+
+.home-club-button {
+    margin-top: -50px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.home-club-button input {
+    width: 42%;
+    margin: auto;
+    background-color: white;
+    border: 3px solid #fc9a09;
+    height: 40px;
+    font-size: 25px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.home-club-button input:hover {
+    color: white;
+    background-color: #fc9a09;
+    cursor: pointer;
+}
+
+.home-club-button input:active {
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    border: 3px solid #e08907;
+    background-color: #e08907;
+}
+
+.home-events {
+    background-color: #fc9a09;
+    height: 470px;
+}
+
+.home-events-title {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 170%;
+    color: white;
+    text-shadow: 0px 2px 5px gray;
+}
+
+.events {
+    width: 43%;
+    margin: auto;
+}
+
+.events p {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+}
+
+.events hr {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.events .event-discription {
+    color: rgb(233, 233, 233);
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+
+/*About page stuff*/
+.about-page .header-about {
+    background-image: url(../images/pikachuBG5.jpg);
+}
+
+.header-about h1 {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 5px 15px black;
+}
+
+.about-club {
+    height: 375px;
+}
+
+.about-club h1 {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 20px;
+    color: rgb(253, 154, 9);
+    text-shadow: 0px 2px 2px gray;
+}
+
+.about-club {
+    width: 100%;
+    margin: auto;
+}
+
+.about-club-content {
+    width: 70%;
+    margin: auto;
+}
+
+.about-club-description {
+    padding-top: 50px;
+}
+
+.about-club-description p {
+    text-align: right;
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.about-club-image img {
+    float: right;
+    height: 270px;
+    margin: auto;
+}
+
+.accomplish {
+    margin-top: 50px;
+    height: 360px;
+    background-color: rgb(253, 154, 9);
+}
+
+.accomplish-content {
+    width: 80%;
+    margin: auto;
+}
+
+.accomplish-title {
+    float: left;
+    width: 30%;
+}
+
+.accomplish-description {
+    float: left;
+    width: 70%;
+}
+
+.accomplish-description p {
+    color: white;
+    font-size: 30px;
+    margin-top: 80px;
+    margin-left: 175px;
+}
+
+.accomplish-title h1 {
+    color: white;
+    font-size: 85px;
+    margin-top: 40px;
+}
+
+.club-members {
+    width: 100%;
+    height: auto;
+}
+
+.club-members-content {
+    margin-bottom: 60px;
+}
+
+.club-members h1 {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: rgb(253, 154, 9);
+    text-shadow: 0px 2px 2px gray;
+    margin-bottom: -70px;
+}
+
+.members-right {
+    width: 80%;
+    margin: auto;
+}
+
+.member-text-right {
+    padding-top: 30px;
+}
+
+.member-text-right p {
+    text-align: left;
+    margin-left: 12%;
+    font-size: 30px;
+}
+
+.member-image-right img {
+    float: left;
+    height: 175px;
+}
+
+.members-left {
+    width: 80%;
+    margin: auto;
+}
+
+.member-text-left {
+    padding-top: 30px;
+}
+
+.member-text-left p {
+    text-align: right;
+    margin-right: 12%;
+    font-size: 30px;
+}
+
+.member-image-left img {
+    float: right;
+    margin-top: 20px;
+    height: 150px;
+}
+
+.club-join input {
+    width: 100%;
+    color: white;
+    margin: auto;
+    background-color: #fc9a09;
+    height: 70px;
+    font-size: 30px;
+    border: none;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.club-join input:hover {
+    color: black;
+    border: 5px solid #fc9a09;
+    background-color: white;
+    cursor: pointer;
+}
+
+.club-join input:active {
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    border: 3px solid #fc9a09;
+    background-color: #fc9a09;
+}
+
+
+/*Pikachu page stuff*/
+.pikachu {
+    width: 100%;
+    height: 450px;
+    background-color: #fc9a09;
+}
+
+.pikachu h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 65px;
+    color: white;
+    text-shadow: 0px 2px 5px gray;
+}
+
+.pikachu-content {
+    width: 80%;
+    margin: auto;
+}
+
+.pikachu-description {
+    padding-top: 10px;
+}
+
+.pikachu-description p {
+    color: white;
+    text-align: right;
+    font-size: 30px;
+}
+
+.pikachu-image {
+    height: 100%;
+}
+
+.pikachu-image img {
+    float: right;
+    height: 350px;
+    padding-left: 40px;
+}
 
 .pikachu-page .header-pikachu {
     background-image: url(../images/PikachuBG4.png);
@@ -214,160 +515,101 @@ hr {
     margin-right: 5%;
 }
 
-.pikachu {
-    width: 100%;
-    height: 550px;
-    background-color: #fc9a09;
+
+/*Join Page stuff*/
+.join-page {
+    background-color: rgb(245, 229, 94);
 }
 
-.pikachu h1 {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 65px;
-    color: white;
-    text-shadow: 0px 2px 5px gray;
-}
-
-.pikachu-content {
-    width: 80%;
-    margin: auto;
-}
-
-.pikachu-description {
-    /*float: right;*/
-    padding-top: 50px;
-}
-
-.pikachu-description p {
-    color: white;
-    text-align: right;
-    font-size: 25px;
-}
-
-.pikachu-image {
-    height: 100%;
-}
-
-.pikachu-image img {
-    float: right;
-    /*width: 300px;*/
-    height: 100%;
-    padding-left: 40px;
-}
-
-
-
-
-/*Homepage stuff*/
-
-div.home-imagebar {
-    background-image: url(../images/pikachu-face.jpg);
+.join-page .header-join {
+    background-image: url(../images/pikachuBG2.jpg);
+    height: 100vh;
     background-position: center;
     background-size: cover;
-    height: 150px;
 }
 
-.home-club-title {
-    /*margin-top: 10px;*/
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 170%;
-    color: rgb(253, 154, 9);
-    text-shadow: 0px 2px 2px gray;
+#form-div {
+    color: rgb(41, 37, 33);
+    margin-left: 35%;
 }
 
-.home-club-content {
-    width: 60%;
-    height: 400px;
-    margin: auto;
-}
-
-.home-club-content img {
-    float: left;
-    width: 430px;
-}
-
-.home-club-content p {
-    float: right;
-    margin-right: 50px;
-    margin-top: 20px;
-    width: 350px;
-    font-size: 25px;
-}
-
-.home-club-button {
-    margin-top: -50px;
+.form-elements-gender {
+    margin-left: 85px;
     margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
+    margin-top: 10px;
+    height: 15px;
 }
 
-.home-club-button input {
-    width: 42%;
-    margin: auto;
+.form-elements-gender:hover, #male-radio:hover {
+    cursor: pointer;
+}
+
+.join-us-form label {
+    font-size: 18px;
+}
+
+.form-elements-button {
     background-color: white;
     border: 3px solid #fc9a09;
-    height: 40px;
-    font-size: 25px;
-    /*border-radius: 8px;*/
+    color: black;
+    height: 35px;
+    width: 101%;
+    font-size: 20px;
+    border-radius: 8px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 
-.home-club-button input:hover {
+.form-elements-button:hover {
     color: white;
     background-color: #fc9a09;
     cursor: pointer;
 }
 
-.home-club-button input:active {
-    -webkit-transition-duration: 0s;
-    /* Safari */
-    transition-duration: 0s;
+.form-elements-button:active {
     border: 3px solid #e08907;
     background-color: #e08907;
 }
 
-.home-events {
-    background-color: #fc9a09;
-    height: 470px;
+.form-elements {
+    width: 100%;
+    font-size: 15px;
+    height: 35px;
+    margin-bottom: 5%;
+    margin-top: 4px;
+    border-radius: 8px;
+    border: none;
 }
 
-.home-events-title {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    text-align: center;
-    font-size: 170%;
+
+
+/*Sitemap Page Stuff*/
+.sitemap-page {
+    background-color: rgb(245, 229, 94);
+}
+
+.sitemap-page .header-sitemap {
+    background-image: url(../images/pikachuBG3.png);
+}
+
+.sitemap-links {
+    margin-right: 35%;
     color: white;
-    text-shadow: 0px 2px 5px gray;
 }
 
-.events {
-    width: 43%;
-    margin: auto;
-}
-
-.events p {
-    text-align: center;
+.sitemap-links a {
     color: white;
-    font-size: 150%;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 70px;
 }
 
-.events hr {
-    color: white;
-    margin-bottom: 25px;
-}
-
-.events .event-discription {
-    color: rgb(233, 233, 233);
-    font-size: 20px;
-    margin-top: -20px;
+.sitemap-links ul li {
+    list-style-type: none;
 }
 
 
 /*Footer stuff*/
-
 div.footer {
     background-color: black;
     background-position: center;
@@ -418,299 +660,6 @@ div.footer {
     opacity: .5;
 }
 
-.about-page .header-about {
-    background-image: url(../images/pikachuBG5.jpg);
-}
-
-.header-about h1 {
-    font-size: 100px;
-    color: white;
-    text-align: center;
-    text-shadow: 0px 5px 15px black;
-}
-
-.about-club {
-    height: 330px;
-}
-
-.about-club h1 {
-    text-align: center;
-    font-size: 70px;
-    padding-top: 20px;
-    color: rgb(253, 154, 9);
-    text-shadow: 0px 2px 2px gray;
-}
-
-.about-club {
-    width: 100%;
-    margin: auto;
-}
-
-.about-club-content {
-    width: 70%;
-    margin: auto;
-}
-
-.about-club-description {
-    padding-top: 50px;
-}
-
-.about-club-description p {
-    text-align: right;
-    font-size: 25px;
-    margin-top: 10px;
-}
-
-.about-club-image img {
-    float: right;
-    /*width: 25%;*/
-    height: 270px;
-    margin: auto;
-    /*padding-left: 40px;*/
-}
-
-.accomplish {
-    margin-top: 50px;
-    height: 360px;
-    background-color: rgb(253, 154, 9);
-}
-
-.accomplish-content {
-    width: 80%;
-    margin: auto;
-}
-
-.accomplish-title {
-    float: left;
-    width: 30%;
-}
-
-.accomplish-description {
-    float: left;
-    width: 70%;
-}
-
-.accomplish-description p {
-    color: white;
-    font-size: 30px;
-    margin-top: 80px;
-    margin-left: 175px;
-}
-
-.accomplish-title h1 {
-    color: white;
-    font-size: 85px;
-    margin-top: 40px;
-}
-
-.club-members {
-    width: 100%;
-    height: auto;
-}
-
-.club-members-content {
-  margin-bottom: 60px;
-}
-
-.club-members h1 {
-    text-align: center;
-    font-size: 70px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    color: rgb(253, 154, 9);
-    text-shadow: 0px 2px 2px gray;
-    margin-bottom: -70px;
-}
-
-.members-right {
-    width: 80%;
-    margin: auto;
-}
-
-.member-text-right {
-    padding-top: 30px;
-}
-
-.member-text-right p {
-    text-align: left;
-    margin-left: 12%;
-    font-size: 30px;
-}
-
-.member-image-right img {
-    float: left;
-    height: 175px;
-}
-
-.members-left {
-    width: 80%;
-    margin: auto;
-}
-
-.member-text-left {
-    padding-top: 30px;
-}
-
-.member-text-left p {
-    text-align: right;
-    margin-right: 12%;
-    font-size: 30px;
-}
-
-.member-image-left img {
-    float: right;
-    margin-top: 20px;
-    height: 150px;
-}
-
-.club-join {}
-
-.club-join input {
-    width: 100%;
-    color: white;
-    margin: auto;
-    background-color: #fc9a09;
-    height: 70px;
-    font-size: 30px;
-    border: none;
-    /*border-radius: 8px;*/
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-}
-
-.club-join input:hover {
-    color: black;
-    border: 5px solid #fc9a09;
-    background-color: white;
-    cursor: pointer;
-}
-
-.club-join input:active {
-    -webkit-transition-duration: 0s;
-    /* Safari */
-    transition-duration: 0s;
-    border: 3px solid #fc9a09;
-    background-color: #fc9a09;
-}
-
-
-/*Sitemap Page Stuff*/
-
-.sitemap-page {
-    background-color: rgb(245, 229, 94);
-}
-
-.sitemap-page .header-sitemap {
-    background-image: url(../images/pikachuBG3.png);
-}
-
-.sitemap-links {
-    margin-right: 35%;
-    color: white;
-}
-
-.sitemap-links a {
-    /*margin-right: 35%;*/
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 70px;
-}
-
-.sitemap-links ul li {
-    list-style-type: none;
-}
-
-
-/*Join Page stuff*/
-
-.join-page {
-    background-color: rgb(245, 229, 94);
-}
-
-.join-page .header-join {
-    background-image: url(../images/pikachuBG2.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
-
-#form-div {
-    color: rgb(41, 37, 33);
-    margin-left: 35%;
-}
-
-.form-elements-gender {
-    margin-left: 85px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    height: 15px;
-}
-
-.form-elements-gender:hover, #male-radio:hover {
-    cursor: pointer;
-}
-
-.join-us-form label {
-  font-size: 18px;
-}
-
-.form-elements-button {
-    background-color: white;
-    border: 3px solid #fc9a09;
-    color: black;
-    height: 35px;
-    width: 101%;
-    font-size: 20px;
-    border-radius: 8px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-
-.form-elements-button:hover {
-    color: white;
-    background-color: #fc9a09;
-    cursor: pointer;
-}
-
-.form-elements-button:active {
-
-    border: 3px solid #e08907;
-    background-color: #e08907;
-}
-
-.form-elements {
-    width: 100%;
-    font-size: 15px;
-    height: 35px;
-    margin-bottom: 5%;
-    margin-top: 4px;
-    border-radius: 8px;
-    border: none;
-}
-
-
-/*Found this online when looking for a better way to get the birthday field*/
-
-.datefield {
-    display: inline;
-    padding: 0.3em;
-    background: #FFF;
-    border-radius: 8px;
-    height: 23px;
-    width: 100%;
-}
-
-.datefield input {
-    width: 105px;
-    border: none;
-    font-size: 80%;
-    background: none;
-    color: #000;
-    margin-bottom: 6%;
-    margin-top: 8px;
-}
-
 
 /*
 Following css were totally stolen from a website i liked.
@@ -759,7 +708,6 @@ Mostly helped with making a cool nav bar.
     color: #F0595C;
     transition: background-color, 0.25s, cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -webkit-transition-duration: 0.25s;
-    /* Safari */
 }
 
 #main-nav .logo.symbol img {
