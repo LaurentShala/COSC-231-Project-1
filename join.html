@@ -5,40 +5,63 @@
 <head>
     <meta charset="utf-8">
     <title>TEMP JOIN</title>
-    <link rel="stylesheet" href="/css/master_styles.css">
+    <link rel="stylesheet" href="css/master_styles.css">
+
+    <script type="text/javascript">
+        function setData() {
+            localStorage.setItem("username", document.querySelector('input[name="username"]').value);
+            localStorage.setItem("password", document.querySelector('input[name="password"]').value);
+            localStorage.setItem("fullName", document.querySelector('input[name="fullName"]').value);
+            localStorage.setItem("email", document.querySelector('input[name="email"]').value);
+            localStorage.setItem("dob", document.querySelector('input[name="dob"]').value);
+            localStorage.setItem("gender", document.querySelector('input[name="gender"]:checked').value);
+            localStorage.setItem("title", document.querySelector('input[name="title"]').value);
+            localStorage.setItem("creditCard", document.querySelector('select[name="selectPokemon"]').value);
+            localStorage.setItem("selectPokemon", document.querySelector('select[name="selectPokemon"]').value);
+        }
+
+        function checkData() {
+          if(localStorage.getItem("username")) {
+            document.querySelector('form[class=join-us-form]').innerHTML = "";
+            var tag = document.createElement("h1");
+            var text = document.createTextNode("Thank you for signing up, " + localStorage.getItem("username") + "!");
+            tag.appendChild(text);
+            document.querySelector('div[id=form-div]').appendChild(tag);
+          }
+        }
+    </script>
 
 </head>
 
 
-<body class="join-page">
+<body class="join-page" onload="checkData();">
 
     <div class="header-join">
         <div id="form-div">
-            <form id="join-us-form" action="index.html" method="POST">
-                <h1>Want to join our group?</h1>
+            <form class="join-us-form">
+              <h1>Want to join our group?</h1>
 
-                <label>Username:<br /><input class="form-elements" type="text" name="username"></label><br />
-                <label>Password:<br /><input class="form-elements" type="password" name="password"></label><br />
-                <label>Full Name:<br /><input class="form-elements" type="text" name="fullName"></label><br />
-                <label>Email:<br /><input class="form-elements" type="email" name="email"></label><br />
-                <label>Birth Day:<br></label>
-                <div id="date2" class="datefield">
-                    <input id="day" type="tel" maxlength="2" placeholder="DD" /> /
-                    <input id="month" type="tel" maxlength="2" placeholder="MM" /> /
-                    <input id="year" type="tel" maxlength="4" placeholder="YYYY" />
-                </div>
-                <br>
+                <label>Username:<br /><input class="form-elements" type="text" name="username" required></label><br />
+                <label>Password:<br /><input class="form-elements" type="password" name="password" required></label><br />
+                <label>Full Name:<br /><input class="form-elements" type="text" name="fullName" placeholder="John Doe" required></label><br />
+                <label>Email:<br /><input class="form-elements" type="email" name="email" placeholder="email@site.com" required></label><br />
+                <label>Date of Birth:<br /><input class="form-elements" type="date" name="dob" placeholder="xx-xx-xxxx" pattern="^\d{2}[-/ ]\d{2}[-/ ]\d{4}$" required></label><br />
                 <label>Gender:<br></label>
-                <label><input id="male-radio" type="radio" name="gender" >Male</label>
-                <label><input class="form-elements-gender" type="radio" name="gender">Female</label>
-                <label><input class="form-elements-gender" type="radio" name="gender" >Other</label><br />
-
-                <label>Requested Title:<br /><input class="form-elements" type="text" name="title"></label><br />
-                <label>Credit Card:<br /><input class="form-elements" type="text" name="creditCard"></label><br />
-                <label>Choose favorite apple:<br /><input class="form-elements" type="text" name="apple"></label><br />
-                <input class="form-elements-button" type="reset" value="Join!">
-
-
+                <label><input id="male-radio" type="radio" name="gender" value="male" required>Male</label>
+                <label><input class="form-elements-gender" type="radio" name="gender" value="female" required>Female</label>
+                <label><input class="form-elements-gender" type="radio" name="gender" value="other" required>Other</label><br />
+                <label>Requested Title:<br /><input class="form-elements" type="text" name="title" required></label><br />
+                <label>Credit Card:<br /><input class="form-elements" type="text" name="creditCard" pattern="^\d{4}[- ]?\d{4}[- ]?\d{4}[- ]?\d{4}$" placeholder="xxxx-xxxx-xxxx-xxxx" required ></label><br />
+                <label>Choose your favorite Pokemon:<br></label>
+                <select class="form-elements" name="selectPokemon" required>
+                  <option value="Pikachu">Pikachu</option>
+                  <option value="test">Charizard</option>
+                  <option value="test">Mewtwo</option>
+                  <option value="test">Lucario</option>
+                  <option value="test">Eevee</option>
+                  <option value="test">Gengar</option>
+                </select>
+                <input class="form-elements-button" type="submit" value="Join!" onclick="setData();">
             </form>
         </div>
     </div>
@@ -49,17 +72,17 @@
     <div id="main-nav">
         <div id="fixed-nav" class="animated fadeInDown" style="display: block;">
             <div class="main-nav-inner">
-                <a href="/index.html" class="logo symbol">
-                    <img src="/images/pikachuIcon.png" alt="the face of Pikachu" />
+                <a href="index.html" class="logo symbol">
+                    <img src="images/pikachuIcon.png" alt="the face of Pikachu" />
                 </a>
                 <div class="nav-link-holder">
-                    <a href="/index.html">Home</a>
+                    <a href="index.html">Home</a>
                 </div>
                 <div class="nav-link-holder">
-                    <a href="/about.html">About Club</a>
+                    <a href="about.html">About Club</a>
                 </div>
                 <div class="nav-link-holder">
-                    <a href="/pikachu.html">Pikachu</a>
+                    <a href="pikachu.html">Pikachu</a>
                 </div>
                 <div class="nav-link-holder">
                     <a href="join.html">Join Us</a>
@@ -80,17 +103,24 @@
 
 
 
-
     <div class="footer">
-      <div class="footer-content">
-        <h1 class="footer-header">Find us on</h1>
-        <ul class="footer-iconlist">
-          <li class="footer-iconlist-li"><a href="http://www.twitter.com"><img class="footer-image" src="/images/twitter-icon.png" alt="twitter icon"/></a></li>
-          <li class="footer-iconlist-li"><a href="http://www.facebook.com"><img class="footer-image" src="/images/facebook-icon.png" alt="facebook icon"/></a></li>
-          <li class="footer-iconlist-li"><a href="http://www.instagram.com"><img class="footer-image" src="/images/instagram-icon.png" alt="instagram icon"/></a></li>
-          <li class="footer-iconlist-li"><a href="http://www.snapchat.com"><img class="footer-image" src="/images/snapchat-icon.png" alt="snapchat icon"/></a></li>
-        </ul>
-      </div>
+        <div class="footer-content">
+            <h1 class="footer-header">Find us on</h1>
+            <ul class="footer-iconlist">
+                <li class="footer-iconlist-li">
+                    <a href="http://www.twitter.com"><img class="footer-image" src="images/twitter-icon.png" alt="twitter icon" /></a>
+                </li>
+                <li class="footer-iconlist-li">
+                    <a href="http://www.facebook.com"><img class="footer-image" src="images/facebook-icon.png" alt="facebook icon" /></a>
+                </li>
+                <li class="footer-iconlist-li">
+                    <a href="http://www.instagram.com"><img class="footer-image" src="images/instagram-icon.png" alt="instagram icon" /></a>
+                </li>
+                <li class="footer-iconlist-li">
+                    <a href="http://www.snapchat.com"><img class="footer-image" src="images/snapchat-icon.png" alt="snapchat icon" /></a>
+                </li>
+            </ul>
+        </div>
     </div>
 
 
